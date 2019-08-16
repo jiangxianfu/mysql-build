@@ -20,4 +20,4 @@ RUN sed -i 's/nodaemon=false/nodaemon=true/g' /etc/supervisord.conf
 
 WORKDIR /
 
-ENTRYPOINT ["/usr/bin/supervisord"]
+ENTRYPOINT ["/usr/bin/supervisord","-c","/etc/supervisord.conf"]
