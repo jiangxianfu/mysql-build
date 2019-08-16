@@ -14,8 +14,8 @@ RUN yum install -y vim wget git rpm zip tar python python-setuptools python-pip 
     gperf
 
 RUN mkdir -p /mysql-src
-RUN systemctl start supervisor
-Run systemctl stop supervisor
+RUN systemctl start supervisord
+Run systemctl stop supervisord
 RUN sed -i 's/nodaemon=false/nodaemon=true/g' /etc/supervisord.conf
 
 WORKDIR /
