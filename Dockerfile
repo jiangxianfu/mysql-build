@@ -19,4 +19,4 @@ COPY supervisord.conf /etc/supervisord.conf
 
 WORKDIR /
 
-ENTRYPOINT ["/usr/bin/supervisord","-c","/etc/supervisord.conf"]
+ENTRYPOINT ["supervisord","-c","/etc/supervisord.conf"]
